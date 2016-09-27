@@ -2,10 +2,10 @@ require 'rails_helper.rb'
 
 feature 'Creating Posts' do
     scenario 'can create job' do
-        #visit root rout
+        #visit root route
         visit '/' 
         #create a post link
-        click link 'Creat Post'
+        click link 'Create Post'
         #fill the form with needed information (title and caption)  
         Fill_in 'Title', with: 'title'
         Fill_in 'Caption', with: 'caption'
