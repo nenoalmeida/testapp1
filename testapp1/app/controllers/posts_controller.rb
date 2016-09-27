@@ -13,5 +13,10 @@ class PostsController < ApplicationController
   else
     render :new
   end
+ end
+
+  private 
+  def post_params
+  params.require(:posts).permit(:title, :caption)
   end
 end
