@@ -10,7 +10,7 @@ feature 'Creating Posts' do
         Fill_in 'Title', with: 'title'
         Fill_in 'Caption', with: 'caption'
         #click submit botton
-        click_boton 'Create Update'
+        click_boton 'Create Post'
         #expect the page to have content we submit
         expect(page).to have_content('title')
         expect(page).to have_content('caption')
