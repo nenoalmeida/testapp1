@@ -1,5 +1,6 @@
 require 'rails_helper.rb'
 
+
 feature 'Creating Posts' do
     scenario 'can create job' do
         #visit root route
